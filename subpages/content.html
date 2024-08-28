@@ -22,10 +22,26 @@
         <p id="text-paragraph">TEXTO</p>
     </div>
 
+    <script src="../src/js/main.js"></script>
+
     <script>
         function checkData(data){
-            if (data == "texto") {
-                return console.log("Texto!")
+            if (data == "roteador") {
+                return ChangeCurrentPage(0,0)
+            }
+            if (data == "redeswifi") {
+                return ChangeCurrentPage(1,1)
+            }
+            if (data == "segurancawifi") {
+                return ChangeCurrentPage(2,2)
+            }
+            if (data == "canaiswifi") {
+                return ChangeCurrentPage(3,3)
+            }
+            if (data == "tiposredesconexoes") {
+                return ChangeCurrentPage(4,4)
+            } else {
+                return ChangePage('../index.html')
             }
         }
         window.onload = function () {
