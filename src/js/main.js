@@ -1,4 +1,3 @@
-//Bagulho
 //0 Roteador
 //1 Redes WI-FI
 //2 Segurança Das Redes WI-FI
@@ -21,7 +20,21 @@ const pageTexts = [
     "Rede de área local (LAN) Uma LAN é um sistema interconectado limitado em tamanho e geografia. ...<br>Redes de longa distância (WAN) ...<br></br>Redes de provedores de serviços. ...<br></br>Redes em nuvem.<br>Uma rede empresarial que abrange edifícios, cidades e até países é chamada de rede de longa distância (WAN). Enquanto as redes de área locais são usadas para transmitir dados em velocidades mais altas em estreita proximidade, as WANs são configuradas para comunicação de longa distância que é segura e confiável."
 ];
 
-function ChangePage(titleNumber,textNumber){
+function ChangePage(PagePath){
+    url = PagePath
+    document.location.href = url
+}
+
+//data - String --> "Text"
+//pagePath - String --> "subpages/content.html"
+function sendDataToPage(data,pagePath) {
+    url = pagePath + "?name=" + encodeURIComponent(data);
+
+    document.location.href = url;
+}
+
+
+function ChangeCurrentPage(titleNumber,textNumber){
     var h1Title = document.getElementById("topic-title");
     var pText = document.getElementById("text-paragraph");
 
