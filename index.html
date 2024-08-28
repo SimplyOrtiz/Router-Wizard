@@ -12,11 +12,9 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="side-bar">
-            <button id="sidebar-button" onclick="console.log(`I've been clicked XP`)">
+        <button id="sidebar-button" onclick="console.log(`I've been clicked XP`)">
                     <img src="./src/res/images/ThreeBars.png" alt="Side Bar - ThreeBars">
-            </button>
-        </div>
+        </button>
         <div class="top-notch">
 
         </div>
@@ -25,6 +23,14 @@
                 <p>Devs</p>
             </button>
         </div>
+    </div>
+    <div class="side-bar">
+        <button id="sidebar-button" onclick="sendDataToPage('subpages/content.html','texto')">
+            <div>
+                <img src="./src/res/images/img.png" alt="Side Bar - Test">
+                <p>Test</p>
+            </div>
+        </button>
     </div>
     <div>
         <h3>Seja bem-vindo ao nosso site!</h3>
