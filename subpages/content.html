@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RW - Content</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="side-bar">
+
+        </div>
+        <div class="top-notch">
+
+        </div>
+        <div class="team-members">
+
+        </div>
+    </div>
+    <div>
+        <h1 id="topic-title">TITULO</h1>
+        <p id="text-paragraph">TEXTO</p>
+    </div>
+
+    <script>
+        function checkData(data){
+            if (data == "texto") {
+                return console.log("Texto!")
+            }
+        }
+        window.onload = function () {
+            var url = document.location.href,
+            params = url.split('?')[1].split('&'),
+            data = {}, tmp;
+
+            for (var i = 0, l = params.length; i < l; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+            checkData(data.name);
+        }
+    
+    </script>
+</body>
+</html>
