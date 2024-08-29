@@ -1,4 +1,37 @@
+*{
+    --light-blue: rgb(0, 153, 255);
+}
+
+img.sidebar-icon{
+    height: 6vh;
+    width: auto;
+}
+
+img.logo{
+    height: 8vh;
+    width: auto;
+}
+
 img{
-    height: fit-content;
-    width: fit-content;
+    height: 14vh;
+    width: auto;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar-button{
+    left: 0;
+}
+
+.team-members{
+    right: 0;
+}
+
+.top-notch{
+    background-color: var(--light-blue);
 }
