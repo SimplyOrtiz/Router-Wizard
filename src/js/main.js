@@ -9,7 +9,8 @@ const pageTitle = [
     "Redes WI-FI",
     "Segurança Das Redes WI-FI",
     "Canais WI-FI",
-    "Tipos de Redes e conexões"
+    "Tipos de Redes e Conexões",
+    "Sem contéudo encontrado"
 ];
 
 const pageTexts = [
@@ -17,7 +18,8 @@ const pageTexts = [
     "Wi-Fi é uma abreviação de 'Wireless Fidelity', que significa fidelidade sem fio, em português. Wi-fi, ou wireless é uma tecnologia de comunicação que não faz uso de cabos, e geralmente é transmitida através de frequências de rádio, infravermelhos, etc. O wi-fi não necessita de licença para instalação e/ou operação.<br>O espectro Wi-Fi de 2,4 GHz tem 70 MHz de largura, e os dispositivos são limitados tipicamente a três canais de 20 MHz. O espectro Wi-Fi de 5 GHz tem aproximadamente 500 MHz de largura, e os dispositivos podem usar até seis canais maiores de 80 MHz para velocidades mais rápidas.",
     "<h1>A Importância da Segurança Wi-Fi</h1><br>Se sua rede Wi-Fi não estiver protegida, você está abrindo as portas para uma série de riscos, incluindo: Acesso não autorizado de hackers, que podem invadir sua rede, acessar seus dispositivos e roubar informações confidenciais. Monitoramento não autorizado das suas atividades online.<br>A segurança de rede é o conjunto de medidas, ferramentas e processos que visam a proteger a infraestrutura de rede de uma empresa contra ataques cibernéticos, como vírus, malwares e outros. Sua principal prioridade é impedir o acesso, a modificação ou a invasão da rede.",
     "O canal Wi-Fi é uma das principais características de uma rede sem fio. Ele funciona como uma espécie de 'faixa de frequência' reservada para a transmissão dos dados. Imagine que você está em uma sala cheia de pessoas conversando. Cada pessoa representa um dispositivo conectado à rede Wi-Fi.<br>O canal Wi-Fi é uma das principais características de uma rede sem fio. Ele funciona como uma espécie de 'faixa de frequência' reservada para a transmissão dos dados. Imagine que você está em uma sala cheia de pessoas conversando. Cada pessoa representa um dispositivo conectado à rede Wi-Fi.",
-    "Rede de área local (LAN) Uma LAN é um sistema interconectado limitado em tamanho e geografia. ...<br>Redes de longa distância (WAN) ...<br></br>Redes de provedores de serviços. ...<br></br>Redes em nuvem.<br>Uma rede empresarial que abrange edifícios, cidades e até países é chamada de rede de longa distância (WAN). Enquanto as redes de área locais são usadas para transmitir dados em velocidades mais altas em estreita proximidade, as WANs são configuradas para comunicação de longa distância que é segura e confiável."
+    "Rede de área local (LAN) Uma LAN é um sistema interconectado limitado em tamanho e geografia. ...<br>Redes de longa distância (WAN) ...<br></br>Redes de provedores de serviços. ...<br></br>Redes em nuvem.<br>Uma rede empresarial que abrange edifícios, cidades e até países é chamada de rede de longa distância (WAN). Enquanto as redes de área locais são usadas para transmitir dados em velocidades mais altas em estreita proximidade, as WANs são configuradas para comunicação de longa distância que é segura e confiável.",
+    "Por favor clique no ícone de menu no canto superior esquerdo para ver os conteúdo desta página."
 ];
 
 function ChangePage(PagePath){
