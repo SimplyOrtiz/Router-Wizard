@@ -3,38 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>RW - Devs</title>
     <link rel="shortcut icon" href="../src/res/images/Logo Site.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../src/css/fonts.css">
     <link rel="stylesheet" href="../src/css/style.css">
+    
 </head>
 <body class="montserrat-regular">
     <div class="navbar">
-        <button id="sidebar-button" onclick="console.log(`I've been clicked XP`)">
-            <img src="../src/res/images/SideBar-Closed.svg" alt="Side Bar - Closed Hamburger">
+        <button id="sidebar-mainbutton" onclick="onButtonClickSideBar()">
+            <img src="../src/res/images/SideBar-Closed.svg" class="sidebar-icon" alt="Side Bar - Closed Hamburger">
         </button>
         <div class="top-notch">
             <a href="../index.html">
-                <img src="../src/res/images/Logo Site.png" alt="">
-                Router Wizard
+                Router 
+                <img src="../src/res/images/Logo Site.png" class="logo" alt="Website Logo">
+                 Wizard
             </a>
         </div>
         <div class="team-members">
-            <button onclick="window.history.go(-1)">
-                <img src="../src/res/images/Membros.png" alt="Navbar - Members">
-                <p>Voltar</p>
+            <button onclick="window.history.go(-1)" class="buttondev">
+                <img src="../src/res/images/Membros.png" alt="Navbar - Memebers" style="height: 11vh;">
+                <p style="margin: 0;">Voltar</p>
             </button>
         </div>
     </div>
+    <div class="side-bar">
+        <button id="sidebar-mainbutton" onclick="onButtonClickSideBar()">
+            <img src="../src/res/images/SideBar-Open.svg" class="sidebar-icon" alt="Side Bar - Closed Hamburger">
+        </button>
 
-    <div>
+        <button id="sidebar-button" onclick="sendDataToPage('roteador','./content.html')">
+            <div>
+                <img src="../src/res/images/Roteadores.png" alt="Side Bar - Routers">
+                <p>Roteadores</p>
+            </div>
+        </button>
+        <button id="sidebar-button" onclick="sendDataToPage('redeswifi','./content.html')">
+            <div>
+                <img src="../src/res/images/Redes WI-FI.png" alt="Side Bar - Wifi Networks">
+                <p>Redes Wifi</p>
+            </div>
+        </button>
+        <button id="sidebar-button" onclick="sendDataToPage('segurancawifi','./content.html')">
+            <div>
+                <img src="../src/res/images/Segurança Das Redes WI-FI.png" alt="Side Bar - Wifi Security">
+                <p>Segurança Wifi</p>
+            </div>
+        </button>
+        <button id="sidebar-button" onclick="sendDataToPage('canaiswifi','./content.html')">
+            <div>
+                <img src="../src/res/images/Canais WI-FI.png" alt="Side Bar - Wifi Channels">
+                <p>Canais Wifi</p>
+            </div>
+        </button>
+        <button id="sidebar-button" onclick="sendDataToPage('tiposredesconexoes','./content.html')">
+            <div>
+                <img src="../src/res/images/Tipos de Redes e conexões.png" alt="Side Bar - Network Types">
+                <p>Tipos de Rede</p>
+            </div>
+        </button>
+    </div>
+    <div class="welcome-message" style="padding: 5%;">
         <h1 id="title1">Time Criativo</h1>
-        <p id="text1">Carlos Eduardo<br>Matheus Mendes<br>Samuel Zampieri</p>
+        <p id="text1"><b>Carlos Eduardo<br>Matheus Mendes<br>Samuel Zampieri</b></p>
         <br>
         <h1 id="title2">Time de desenvolvimento</h1>
-        <p id="text2">Bruno Rodrigues<br>Diego Otavio<br>Guilherme Ortiz</p>
+        <p id="text2"><b>Bruno Rodrigues<br>Diego Otavio<br>Guilherme Ortiz</b></p>
     </div>
+
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/sidebar.js"></script>
 </body>
 </html>

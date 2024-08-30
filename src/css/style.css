@@ -1,5 +1,7 @@
 *{
     --light-blue: rgb(0, 153, 255);
+    --darker-blue: rgb(25,81,146);
+    --transparent-white: rgb(216 238 252 / 32%);
 }
 
 img.sidebar-icon{
@@ -15,23 +17,130 @@ img.logo{
 img{
     height: 14vh;
     width: auto;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
 }
 
+body{
+    color: #fff;
+
+    margin: 0;
+
+    background: var(--darker-blue);
+    background-image: url(../res/images/Background.png);
+    background-image: url(../res/images/Background.png), linear-gradient(90deg, rgba(25,81,146,1) 0%, rgba(56,182,255,1) 50%, rgba(25,81,146,1) 100%);
+    background-repeat: repeat;
+}
 .navbar{
     position: sticky;
     top: 0;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+    /*z-index: 2;*/
 }
 
 #sidebar-button{
-    left: 0;
+    background-color: var(--light-blue);
+    height: 120px;
+    border: 1px solid rgb(4 140 230);;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.team-members{
-    right: 0;
+#sidebar-button:hover{
+    background-color: var(--darker-blue);
+    border: 1px solid rgb(3, 126, 207);;
+    transition: 0.5s;
 }
+
+#sidebar-button div p{
+    margin: 0;
+    color: white;
+}
+
+#sidebar-mainbutton{
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.team-members,.team-members button{
+    background-color: var(--transparent-white);
+    border: var(--light-blue) solid 1px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+}
+
+/*
+.team-members,.team-members button:hover{
+    background-color: var(--transparent-white)/2;
+}
+*/
 
 .top-notch{
-    background-color: var(--light-blue);
+    background-color: var(--transparent-white);
+    width: 30vw;
+    border-radius: 100px;
+    backdrop-filter: blur(2px);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.top-notch a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    justify-content: center;
+    font-size: xx-large;
+    padding: 15px;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side-bar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow: hidden;
+    transition: 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.welcome-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+}
+
+#text-paragraph{
+    text-align: justify;
+}
+
+#text-paragraph h2{
+    text-align: center;
+}
+
+#topic-title{
+    text-align: center;
 }

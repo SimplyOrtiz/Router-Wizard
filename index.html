@@ -13,23 +13,28 @@
 </head>
 <body class="montserrat-regular">
     <div class="navbar">
-        <button id="sidebar-button" onclick="console.log(`I've been clicked XP`)">
+        <button id="sidebar-mainbutton" onclick="onButtonClickSideBar()">
             <img src="./src/res/images/SideBar-Closed.svg" class="sidebar-icon" alt="Side Bar - Closed Hamburger">
         </button>
         <div class="top-notch">
             <a href="#">
+                Router 
                 <img src="./src/res/images/Logo Site.png" class="logo" alt="Website Logo">
-                Router Wizard
+                 Wizard
             </a>
         </div>
         <div class="team-members">
             <button onclick="ChangePage('subpages/devs.html')" class="buttondev">
-                <img src="./src/res/images/Membros.png" alt="Navbar - Memebers">
-                <p>Devs</p>
+                <img src="./src/res/images/Membros.png" alt="Navbar - Memebers" style="height: 11vh;">
+                <p style="margin: 0;">Devs</p>
             </button>
         </div>
     </div>
     <div class="side-bar">
+        <button id="sidebar-mainbutton" onclick="onButtonClickSideBar()">
+            <img src="./src/res/images/SideBar-Open.svg" class="sidebar-icon" alt="Side Bar - Closed Hamburger">
+        </button>
+
         <button id="sidebar-button" onclick="sendDataToPage('roteador','subpages/content.html')">
             <div>
                 <img src="./src/res/images/Roteadores.png" alt="Side Bar - Routers">
@@ -56,16 +61,17 @@
         </button>
         <button id="sidebar-button" onclick="sendDataToPage('tiposredesconexoes','subpages/content.html')">
             <div>
-                <img src="./src/res/images/Roteadores.png" alt="Side Bar - Network Types">
+                <img src="./src/res/images/Tipos de Redes e conexões.png" alt="Side Bar - Network Types">
                 <p>Tipos de Rede</p>
             </div>
         </button>
     </div>
     <div class="welcome-message">
         <h3>Seja bem-vindo ao Router Wizard!</h3>
-        <p><br>Para começar sua jornada de conhecimento, clique no botão no canto superior esquerdo e descubra o que preparamos especialmente para você.s</p>
+        <p><br>Para começar sua jornada de conhecimento,<br>clique no botão no canto superior esquerdo<br>e descubra o que preparamos especialmente para você.</p>
     </div>
 
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/sidebar.js"></script>
 </body>
 </html>
